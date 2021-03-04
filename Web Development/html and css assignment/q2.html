@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q2</title>
+	</head>
+	<style type="text/css">
+		h1{
+			text-align: center;
+			text-transform: uppercase;
+			font: bold;
+
+		}
+		input{
+			margin: 8px;
+			width: 33%;
+		}
+		select{
+			margin: 8px;
+			width: 33%;
+		}
+		textarea{
+			margin: 8px;
+			width: 33%;
+		}
+
+		.submit{
+			width: 20%;
+			margin-left: auto;
+			margin-right: auto;
+            
+
+		}
+
+		.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'upload resume';
+  display: inline-block;
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+.submit .s{
+	border-radius: 2rem;
+	border: 2px solid black;
+   color: black;
+   background-color: green;
+}
+.form{
+	border-radius: 2em;
+	border: 2px solid black;
+	height: 70%;
+	width: 60%;
+	background-color: #FEF9E7;
+	opacity: 100%;
+	font-style: bold;
+	margin-left: auto;
+	margin-right: auto;
+}
+ fieldset{
+ 	border-color: red;
+ 	padding-top: 2rem;
+ 	margin:8px;
+ }
+
+.bo{
+	background-image: url(img1.jpg);
+	min-height: 500px; 
+}
+
+	</style>
+</head>
+<body class="bo">
+	
+
+		
+	
+
+	<form action="#" method="post" class="form" >
+	  <h1 >Job application</h1>
+	<fieldset style="border-radius: 1rem;">
+		<legend>Personal Information</legend>
+		<div>
+		<label for="fname">First Name:</label>
+		<input type="text" id="fname"  name="firstName" placeholder="enter your firstname">
+	</div>
+	<div>
+         <label for="lname">Last Name:</label>
+         <input type="text" name="LastName" id="lname" placeholder="enter your lastname">
+             </div>
+            <div>
+            	<label for="mail">Email:</label>
+            	<input type="email" name="email" id="mail" placeholder="enter your email address">
+
+            </div>
+
+            <div>
+            	<label for="dob">Date Of Birth:</label>
+                 <input type="Date" name="dob" id="dob" placeholder="dd-mm-yyyy">
+            </div>
+            <div>
+            	<label for="degree">Qualification:</label>
+            	<select id="degree" name="Qualification">
+    <option value="BTech">BTech</option>
+    <option value="MTech">MTech</option>
+    <option value="BBA">BBA</option>
+    <option value="MBA">MBA</option>
+           </select>
+            </div>
+   
+             <div>
+             	<label for="stream">Specilization:</label>
+             	<input type="text" id="stream" name="stream" placeholder="enter your Specilization">
+
+             </div>
+
+             <div>
+             	<label for="hobbies">Hobbies:</label>
+             	<input type="text" name="hobby" id="hobbies" placeholder="enter your hobbies ">
+             </div>
+ 
+ <div>
+             	<label for="phone">Contact:</label>
+             	<input type="text" name="phone" id="phone" placeholder="enter your Contact number">
+             </div>
+
+	</fieldset>
+
+     
+     <fieldset  style="border-radius: 1rem;">
+    
+     	<legend>Technical Details:</legend>
+
+     	<div>
+     		<label for="pname">Project Name:</label>
+             <input type="text" name="pname" id="pname" placeholder="enter project name">
+     	</div>
+     	<div>
+     	  <lable for="msg" >Project Description:</lable>
+     	  <textarea  id="msg" name="msg"   placeholder="Enter some details about your project"></textarea>
+
+     	</div>
+
+         <div>
+         	<label  >Resume:</label>
+         	
+         	<input type="file"  class="custom-file-input" name="resume" value="upload resume" >
+         </div>
+           
+           <div class="submit">
+           	<input class="s"  type="submit" name="send" value="Submit"  >
+           </div>
+
+     </fieldset>
+
+
+    </form>
+
+</body>
+</html>
